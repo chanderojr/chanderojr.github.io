@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Channing's First Website</title>
+        <style>
+            body {
+                background: rgb(250, 250, 250);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+                background-image: url("http://www.greenscreenmovie.com/content2/9298/thumb100.jpg");
+                background-color: #cccccc;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            #all-contents {
+                max-width: 1000px;
+                margin: auto;
+            }
+        
+            /* navigation menu */
+            nav {
+                background: rgb(0, 50
+                , 150);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+        
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+                border-radius: 5px 50px 5px;
+                margin: auto;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 260px;
+                border-radius: 5px 50px 5px;
+                margin-top: 5px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            .interests header {
+                font-size: 1.25em;
+            }
+            
+            /* Videos underneath header */
+            
+            .item1 {
+                grid-area: 1 / 1 / 2 / 2; 
+                border-radius: 10px 10px
+            }
+            
+            .item2 {
+                grid-area: 1 / 9 / 2 / 11;
+                border-radius: 10px 10px
+            }
+            
+            .grid-container {
+                max-width: 932px;
+                margin: auto;
+                display: grid;
+                grid-auto-columns: 45px;
+                grid-gap: 14px;
+                background-color: #003296;
+                padding: 10px;
+                align-items: center;
+                padding: 10px;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div id="all-contents">
+            <nav>
+                <header>Channing Awesome Website</header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+            
+            <main>
+                <div class="sidebar">
+                    <img src="https://pbs.twimg.com/profile_images/1088199581718974464/2Ak4oBi8_400x400.jpg
+                    ">
+                </div>
+                
+                <div class="content">
+                    <header> Channing Armour</header>
+                    
+                    <p> Student at Mcmain High School</p>
+                    <p> Student at Operation Spark</p>
+                    
+                    <section class="interests">
+                        <header>Interests</header>
+                        <ul>
+                            <li>Playing Video Games</li>
+                            <li>Reading</li>
+                            <li>Watching Youtube</li>
+                            <li>Creating content</li>
+                            <li>TECHNOLOGY!!</li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <div class="grid-container">
+            <div class="item1">
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/mCv60-63JpQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="item2">
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/DIfoiVqRS4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </body>
+</html>
