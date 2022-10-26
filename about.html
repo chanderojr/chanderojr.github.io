@@ -54,6 +54,10 @@
                 text-decoration: none;
                 color: #fff;
             }
+            nav b {
+                text-decoration: none;
+                color: #fff;
+            }
         
             /* main container area beneath menu */
             main {
@@ -74,25 +78,24 @@
             }
             .content {
                 flex: 1;
-                padding: 5px;
+                padding: 10px;
             }
-            .skills header {
+            .interests header {
                 font-size: 1.25em;
             }
             
             /* Videos underneath header */
 
             .grid-container {
-                max-width: 932px;
+                max-width: 0px;
+                max-height: 100px;
                 margin: auto;
-                display: grid;
-                grid-auto-columns: 45px;
-                grid-gap: 14px;
-                background-color: #003296;
-                padding: 10px;
+                background-color: #3c93f1;
+                /* padding: 10px; */
                 align-items: center;
             }
-            a:link, a:visited {
+            
+             a:link, a:visited {
                 background: rgb(0, 50, 150);
                 color: white;
                 padding: 14px 25px;
@@ -105,17 +108,20 @@
                 background-color: rgb(72, 195, 219);
                 color:#000000;
             }
-            .item1 {
-                grid-area: 1 / 1 / 2 / 2; 
-                width: 100%; 
-                border-radius: 10px 10px
+            a.one:visited {color:#0000ff;}
+            a.one:hover {color:#000000;}
+            a.one{
+                margin: 0;
+                margin-top: 50px;
+                position: absolute;
+                /* top: 80%; */
+                left: 50%;
+                -ms-transform: translate(-0%, -50%);
+                transform: translate(-50%, -50%);
+                border-radius: 80px ;
+                outline: #ffffff solid 2px;
             }
             
-            .item2 {
-                grid-area: 1 / 9 / 2 / 11;
-                width: 100%; 
-                border-radius: 10px 10px
-            }
             
           
             
@@ -134,37 +140,34 @@
             </nav>
             
             <main>
-                <div class="sidebar">
-                    <!-- <img src="https://i.pinimg.com/750x/97/05/f5/9705f5ee5ceed16955e6da86defbdb3e.jpg" width="180" height="240" alt="Computer Hope"> -->
+                <!-- <div class="sidebar">
                     <img src="https://media1.tenor.com/images/16d30b35bce209328640216c3ff5acfe/tenor.gif?itemid=26985888" height="200" width="240">
-                </div>
+                </div> -->
                 
                 <div class="content">
                     <header> Channing Armour Jr</header>
-                    <p> Student at Dillard University</p>
-                    <p> Previously interned at Operation Spark</p>
-                    
-                    <section class="skills">
-                        <header>Skills</header>
-                        <ul style=list-style-type:square;>
-                            <li>Website development and minor game creation(s).</li>
-                            <li>Creating fully functional robots with block coding.</li>
-                            <li>Received IBC certification in Computer Science (Operation Spark).</li>
-                            <li>Proficient in multiple coding languages (HTML/CSS, JavaScript, Python, C++)</li>
+                    <p style=text-indent:30px;>I am a 20 year old Computer Science major and I have a basic knowledge of multiple coding languages; such as, HTML/CSS, 
+                        JavaScript, C++, and Python. My favorite being Python due to the easy algorithms and versatility.
+                    </p>
+                    <p style=text-indent:30px;> My main project(s) currently consists of creating multi-feature AI bot creations which are usable on the social gaming platform, Discord. 
+                        Also, I am an affiliated Twitch streamer for a HBCU esports team called Cxmmunity.
+                    </p>
+                    <section class="interests">
+                        <header>Interests</header>
+                        <ul>
+                            <li>Playing/Streaming Video Games</li>
+                            <li>Creating content</li>
+                            <li>Reading</li>
+                            <li>Making Discord Bots</li>
+                            <li>TECHNOLOGY!!</li>
                         </ul>
                     </section>
+                    <p style=text-align:center>For further details of my qualifications, background, and contributions, please take a moment to download and review my enclosed resume below.</p>
+                    <a class="one" href="file:///Users/cjr/Downloads/Channing%20Armour%20Resume.pdf">Resume</a>
+                    
                 </div>
+                
             </main>
-        </div>
-        <div class="grid-container">
-            <div class="item1">
-                <iframe width="460" height="215" src="https://www.youtube.com/embed/mCv60-63JpQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-            </div>
-            <div class="item2">
-                <iframe width="460" height="215" src="https://www.youtube.com/embed/DIfoiVqRS4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-            </div>
         </div>
     </body>
 </html>

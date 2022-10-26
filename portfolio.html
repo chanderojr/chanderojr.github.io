@@ -81,10 +81,25 @@
                 background: rgb(134, 157, 178);
             } 
             
+            
             #portfolio a {
                 text-decoration: none;
                 color: #000000;
             }
+            a.one:link, a:visited {
+                background: rgb(0, 50, 150);
+                color: white;
+                padding: 14px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                }
+            a.one:hover, a.one:active {
+                background-color: rgb(72, 195, 219);
+                color:#000000;
+            }
+            a.one:visited {color:#0000ff;}
+            
         </style>   
     </head>
     <body>
@@ -92,9 +107,9 @@
             <nav>
                 <header>Channing's Awesome Website</header>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <!-- <li><a href="portfolio.html">About Me</a></li> -->
+                    <li><a class="one" href="index.html">Home</a></li>
+                    <li><a class="one" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="one" href="about.html">About Me</a></li>
                 </ul>
             </nav>
             
